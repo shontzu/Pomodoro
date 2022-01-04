@@ -10,9 +10,9 @@
       <h1>{{ Math.floor(timer / 60) }}:{{ Math.floor(timer % 60) }}</h1>
 
       <div class="center">
-        <button v-on:click="start()">Start timer</button>
-        <button v-on:click="pause()">Pause timer</button>
-        <button v-on:click="reset()">Reset cycles</button>
+        <button @click.prevent="start()">Start timer</button>
+        <button @click.prevent="pause()">Pause timer</button>
+        <button @click.prevent="reset()">Reset cycles</button>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     start() {
-      this.stop();
+      this.pause();
       counter = setInterval(() => {
         if (this.timer === 0) {
           this.pause();
