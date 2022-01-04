@@ -81,7 +81,6 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  /* center the card */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +94,6 @@ html {
   box-shadow: 1px 2px 3px rgba(49, 0, 11, 0.5);
   border-radius: 20px;
   padding: 20px;
-  /* styling items inside card */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
