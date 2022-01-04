@@ -1,21 +1,18 @@
 <template>
   <div id="app">
-    <div class="wrapper">
-      <h1>Hello Pomodoro</h1>
-      <div class="card">
-        <div class="center">
-          <h2>Cycles {{ cycle }}</h2>
-          <h2>Status: {{ status }}</h2>
-        </div>
+    <div class="card">
+      <div class="center">
+        <p>Cycles {{ cycle }}</p>
+        <h1>Hello Pomodoro</h1>
+        <p>Status: {{ status }}</p>
+      </div>
+      <!-- get a minute & a second from timer -->
+      <h1>{{ Math.floor(timer / 60) }}:{{ Math.floor(timer % 60) }}</h1>
 
-        <!-- get a minute & a second from timer -->
-        <h1>{{ Math.floor(timer / 60) }}:{{ Math.floor(timer % 60) }}</h1>
-
-        <div class="center">
-          <button v-on:click="start()">Start timer</button>
-          <button v-on:click="pause()">Pause timer</button>
-          <button v-on:click="reset()">Reset cycles</button>
-        </div>
+      <div class="center">
+        <button v-on:click="start()">Start timer</button>
+        <button v-on:click="pause()">Pause timer</button>
+        <button v-on:click="reset()">Reset cycles</button>
       </div>
     </div>
   </div>
@@ -81,21 +78,19 @@ html {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   width: 100vw;
-  position:fixed;
-  top:0;
-  /* center the wrapper */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* center the card */
   display: flex;
   align-items: center;
   justify-content: center;
   color: #31000baf;
   background-image: url("../src/assets/bg-fruit.jpg");
 }
-.wrapper {
+.card {
   width: 50%;
   height: 50%;
-  text-align: center;
-}
-.card {
   background: rgba(250, 219, 228, 0.8);
   box-shadow: 1px 2px 3px rgba(49, 0, 11, 0.5);
   border-radius: 20px;
@@ -126,12 +121,12 @@ button:hover {
   box-shadow: inset 1px 2px 3px rgba(49, 0, 11, 0.5);
 }
 @media screen and (max-width: 1000px) {
-  .wrapper {
+  .card {
     width: 70%;
   }
 }
 @media screen and (max-width: 600px) {
-  .wrapper {
+  .card {
     width: 100%;
   }
 }
