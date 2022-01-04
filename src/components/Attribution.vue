@@ -1,6 +1,6 @@
 <template>
 <div>
-  <vue-typed-js :strings="['Makaih Beats by Free Music Archive (FMA) on makaih.com is licensed under Creative Commons Liscense']">
+  <vue-typed-js :strings="['Makaih Beats by Free Music Archive (FMA) on https://freemusicarchive.org/ is licensed under Creative Commons Liscense']">
     <i class="typing"></i>
   </vue-typed-js>
 </div>
