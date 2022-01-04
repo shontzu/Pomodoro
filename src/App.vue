@@ -2,18 +2,21 @@
   <div id="app">
     <Card />
     <MusicPlayer />
+    <Attribution />
   </div>
 </template>
 
 <script>
 import Card from "../src/components/Card.vue";
 import MusicPlayer from "../src/components/MusicPlayer.vue"
+import Attribution from "../src/components/Attribution.vue"
 
 export default {
   name: "App",
   components: {
     Card,
-    MusicPlayer
+    MusicPlayer,
+    Attribution,
   },
 };
 </script>
