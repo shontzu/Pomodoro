@@ -22,7 +22,7 @@ export default {
   name: "Card",
   data() {
     return {
-      timer: 3,
+      timer: 60,
       cycle: 0,
       status: "study",
     };
