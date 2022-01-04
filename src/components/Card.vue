@@ -52,7 +52,7 @@ export default {
     },
     restart() {
       clearInterval(counter);
-      this.timer = 3;
+      this.timer = 60;
     },
     toggle() {
       // if cycle=even, status=study
