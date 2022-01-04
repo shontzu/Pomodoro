@@ -81,6 +81,8 @@ html {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   width: 100vw;
+  position:fixed;
+  top:0;
   /* center the wrapper */
   display: flex;
   align-items: center;
