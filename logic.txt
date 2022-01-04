@@ -1,0 +1,4 @@
+User can click on play button to start a timer
+Have two sessions (work & break)
+1 minute for work & 1 minute for break
+Increment cycle by 1
